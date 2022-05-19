@@ -1,0 +1,184 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BELLOW IS THE PAGE AND POST COLUMN CSS */
+.topnav {
+    background-color: #c6ccb2;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 25px;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #bf4e30;
+    color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #bf4e30;
+    color: white;
+}
+
+.searchbutton a:hover {
+    background-color: #c6ccb2;
+    color: #bf4e30;
+}
+
+.searchbutton .submit-button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+
+.searchbutton input {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    background-color: #c6ccb2;
+}
+
+.searchbutton input[type=text] {
+    border: 5px solid #bf4e30;
+
+}
+
+.sideprofilebox {
+    background-color: #bf4e30;
+    overflow: auto;
+}
+
+.sideprofilebox a {
+    float: right;
+    color: #000;
+    text-align: right;
+    padding: 5px 10px;
+    border: none;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    align-self: start;
+
+}
+
+.gridmain {
+    display: grid;
+    grid-template-columns: 22% 78%;
+    grid-template-rows: 100%;
+    gap: 0 0;
+}
+
+.columnprofile {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-radius: 25px;
+    background-color: #73AD21;
+    text-align: center;
+}
+
+.columnposts {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: white;
+}
+
+.uploadpart {
+    color: #c6ccb2;
+    font-size: medium;
+    align-self: auto;
+    font-weight: bold;
+}
+
+.mypage {
+    color: #bf4e30;
+    font-weight: bold;
+}
+
+.submit-button {
+    color: white;
+    border-color: white;
+    border-radius: 25px;
+}
+
+/* BELLOW IS THE POSTS COLUMN CSS
+/*
+Grid legend:
+- grid-1: grid connecting the 3 columns, side 2 columns representing the margin
+and the core column with the posts
+- grid-2: grid which is the middle column of grid-1 and contains the posts
+*/
+
+.grid {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 100%;
+    gap: 0 0;
+}
+
+.row-tab {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.row-main {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 35px;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 3% auto 3%;
+    grid-template-rows: 100%;
+    gap: 0 0;
+}
+
+.posts-column {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+button {
+    width: 100%;
+    background: transparent;
+    border: 3px solid #73AD21;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    color: black;
+    cursor: pointer;
+}
+
+.container {
+    border: solid 4px #73AD21;
+    border-radius: 15px;
+}

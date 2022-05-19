@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="../stylesheets/voiceslogin.css">
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="inner-box" id="card">
+            <div class="card-front">
+                <h2>LOGIN</h2>
+                <form action="../../backend/db_trigger.php" method="post">
+                    <label>
+                        <input type="email" class="input-box" name="u_email"
+                               placeholder="Your Email" required>
+                    </label>
+                    <label>
+                        <input type="password" class="input-box" name="u_password"
+                               placeholder="Password" required>
+                    </label>
+                    <br><br><br>
+                    <input type="hidden" id="login_trigger" name="trigger" value="login_attempt">
+                    <input type="submit" class="input-box">
+                </form>
+                <p><a href="register.html">I'm New Here</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
